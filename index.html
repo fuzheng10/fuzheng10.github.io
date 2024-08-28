@@ -62,21 +62,19 @@
             border-radius: 50%;
             object-fit: cover;
         }
-        .profile-sidebar a {
-            display: block;
-            margin: 10px 0;
-            text-decoration: none;
-            color: #000000;
-            font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
-            transition: color 0.3s ease;
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
         }
-        .profile-sidebar a:hover {
-            color: #555555;
+        .social-icons a img {
+            width: 30px;  /* Adjust the size of the icons */
+            height: 30px;
+            transition: transform 0.3s ease;
         }
-        .profile-sidebar a img {
-            vertical-align: middle;
-            margin-right: 8px;
+        .social-icons a img:hover {
+            transform: scale(1.1);
         }
         .content {
             flex: 1;
@@ -108,23 +106,31 @@
 <div class="main-content">
     <div class="profile-sidebar">
         <img src="images/profile-picture.jpeg" alt="Profile Picture">
-        <a href="https://linkedin.com/in/zheng-fu-533bb480" target="_blank">
-            <img src="icons/linkedin-icon.png" alt="LinkedIn" width="5"> LinkedIn
-        </a>
-        <a href="https://x.com/fu10zheng" target="_blank">
-            <img src="icons/twitter-icon.png" alt="Twitter" width="5"> Twitter
-        </a>
-        <a href="https://github.com/fuzheng10" target="_blank">
-            <img src="icons/github-icon.png" alt="GitHub" width="5"> GitHub
-        </a>
+        <div class="social-icons">
+            <a href="https://linkedin.com/in/zheng-fu-533bb480" target="_blank">
+                <img src="icons/linkedin-icon.png" alt="LinkedIn">
+            </a>
+            <a href="https://x.com/fu10zheng" target="_blank">
+                <img src="icons/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://github.com/fuzheng10" target="_blank">
+                <img src="icons/github-icon.png" alt="GitHub">
+            </a>
+            <a href="https://scholar.google.com/citations?user=XkeaHFQAAAAJ&hl=en" target="_blank">
+                <img src="icons/googlescholar-icon.png" alt="Google Scholar">
+            </a>
+            <a href="https://bsky.app/profile/fuzheng.bsky.social" target="_blank">
+                <img src="icons/bluesky-icon.svg" alt="Bluesky">
+            </a>
+        </div>
     </div>
 
     <div class="content">
         <h1>Biography</h1>
-         <p> I am a Ph.D. candidate of sociology at Columbia University. My research lies at the intersection of political sociology and science and technology studies, exploring how knowledge and politics shape each other. I employ a diverse array of methodologies, encompassing ethnography, interviews, computational text analysis, network analysis, national surveys, and online experiments. While my regional focus is on China, I also conduct global comparative research either focusing China’s global influence or using China as a paradigmatic case to understand global challenges in a comparative lens. My work has been published in journals such as <em>American Political Science Review</em> and <em>Sociological Forum</em>. </p>
-          <p> My dissertation reveals the networked (both in terms of social network and Actor Network Theory) nature of political power, specifically how the Chinese state relies on intermediaries that straddle the space between state, market, and society to perform the work of legitimacy, translating the subjects’ interests along the lines of the state, and vice versa. I examine two crucial moments in the state’s governance of the contentious field of worker-employer relations: (1) the work of shoring up the legitimacy of the new labor law and (2) the work of saving the legitimacy of the state when open unrest is almost unavoidable. The earlier version of my paper "Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime", developed out of my dissertation, has won the Best Graduate Student Paper Award at the Political Sociology section of ASA and is now under review. </p>
-          <p> My second line of interest draws on transnational comparative design to explore the politics of knowledge and perception. With co-authors, I have studied how expert narratives, contingent on sociopolitical context of each society, shape the public perception of the global pandemic. In another project, I investigated how international politics impact the perception of migrants using a conjoint experiment design with co-authors. </p>
-          <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S., with each representing one paradigm of fact-checking. While the U.S. leads the world in non-state journalistic fact-checking, China leads the world in enforcing strict state control over facts through a combination of centralized state-led rumor-debunking platform and local police efforts. Other countries like India, Thailand, and Brazil have all established government-run fact-checking websites. My project highlights that the current debate on the severity of the “misinformation” phenomenon neglected a key question: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
+        <p> I am a Ph.D. candidate of sociology at Columbia University. My research lies at the intersection of political sociology and science and technology studies, exploring how knowledge and politics shape each other. I employ a diverse array of methodologies, encompassing ethnography, interviews, computational text analysis, network analysis, national surveys, and online experiments. While my regional focus is on China, I also conduct global comparative research either focusing China’s global influence or using China as a paradigmatic case to understand global challenges in a comparative lens. My work has been published in journals such as <em>American Political Science Review</em> and <em>Sociological Forum</em>.</p>
+        <p> My dissertation reveals the networked (both in terms of social network and Actor Network Theory) nature of political power, specifically how the Chinese state relies on intermediaries that straddle the space between state, market, and society to perform the work of legitimacy, translating the subjects’ interests along the lines of the state, and vice versa. I examine two crucial moments in the state’s governance of the contentious field of worker-employer relations: (1) the work of shoring up the legitimacy of the new labor law and (2) the work of saving the legitimacy of the state when open unrest is almost unavoidable. The earlier version of my paper "Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime", developed out of my dissertation, has won the Best Graduate Student Paper Award at the Political Sociology section of ASA and is now under review.</p>
+        <p> My second line of interest draws on transnational comparative design to explore the politics of knowledge and perception. With co-authors, I have studied how expert narratives, contingent on sociopolitical context of each society, shape the public perception of the global pandemic. In another project, I investigated how international politics impact the perception of migrants using a conjoint experiment design with co-authors.</p>
+        <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S., with each representing one paradigm of fact-checking. While the U.S. leads the world in non-state journalistic fact-checking, China leads the world in enforcing strict state control over facts through a combination of centralized state-led rumor-debunking platform and local police efforts. Other countries like India, Thailand, and Brazil have all established government-run fact-checking websites. My project highlights that the current debate on the severity of the “misinformation” phenomenon neglected a key question: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
     </div>
 </div>
 
