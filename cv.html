@@ -3,60 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Vitae | Your Name</title>
+    <title>Zheng Fu's Profile</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Roboto', sans-serif;
             margin: 0;
-            padding: 20px;
+            padding: 0;
             color: #000000;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
         }
         header {
-            text-align: center;
-            padding: 40px 20px;
-            border-bottom: 2px solid #000000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #ffffff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
-            font-weight: 500;
+            font-size: 1.8em;
+            font-weight: 700;
             font-family: 'Montserrat', sans-serif;
         }
-        header p {
+        header nav {
+            display: flex;
+            align-items: center;
+        }
+        header nav a {
+            margin-left: 20px;
+            text-decoration: none;
+            color: #000000;
+            font-weight: 500;
+            font-family: 'Montserrat', sans-serif;
+            border-bottom: 2px solid transparent;
+            transition: border-bottom 0.3s ease;
+        }
+        header nav a:hover {
+            border-bottom: 2px solid #000000;
+        }
+        .main-content {
+            display: flex;
+            padding: 40px;
+        }
+        .profile-sidebar {
+            width: 200px;
+            margin-right: 40px;
+            text-align: center;
+        }
+        .profile-sidebar img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+        }
+        .social-icons a img {
+            width: 30px;  /* Adjust the size of the icons */
+            height: 30px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons a img:hover {
+            transform: scale(1.1);
+        }
+        .content {
+            flex: 1;
+        }
+        .content h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+        }
+        .content p {
             font-size: 1.2em;
             font-weight: 300;
-            margin: 5px 0 20px 0;
-        }
-        section {
-            padding: 20px 0;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h2 {
-            font-size: 2em;
-            color: #000000;
-            margin-bottom: 20px;
-            font-family: 'Montserrat', sans-serif;
-            font-weight: 700;
-            border-bottom: 2px solid #000000;
-            padding-bottom: 10px;
-        }
-        a.download-link {
-            display: inline-block;
-            margin-top: 20px;
-            padding: 10px 20px;
-            background-color: #000000;
-            color: #ffffff;
-            text-decoration: none;
-            font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-        a.download-link:hover {
-            background-color: #333333;
+            margin: 10px 0;
         }
     </style>
 </head>
@@ -64,14 +96,13 @@
 
 <header>
     <h1>Zheng Fu</h1>
-    <p>Ph.D. candidate of sociology at Columbia University</p>
-    <img src="images/profile-picture.jpeg" alt="Profile Picture">
     <nav>
         <a href="index.html">Home</a>
         <a href="research.html">Research</a>
         <a href="cv.html">CV</a>
     </nav>
 </header>
+
 
 <section id="cv">
     <h2>Curriculum Vitae</h2>
