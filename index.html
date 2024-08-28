@@ -13,10 +13,18 @@
             color: #000000;
             line-height: 1.6;
         }
-        header, footer {
+        header {
             text-align: center;
             padding: 40px 20px;
-            color: #000000;
+            border-bottom: 2px solid #000000;
+        }
+        header img {
+            display: block;
+            margin: 20px auto;
+            width: 100px;  /* Adjust the size of the image */
+            height: 100px;  /* Ensure the height matches the width */
+            border-radius: 50%;  /* Make the image round */
+            object-fit: cover;  /* Ensure the image covers the entire frame without distortion */
         }
         header h1 {
             margin: 0;
@@ -27,6 +35,12 @@
         header p {
             font-size: 1.2em;
             font-weight: 300;
+            margin: 5px 0 20px 0;
+        }
+        section {
+            padding: 20px 0;
+            max-width: 800px;
+            margin: 0 auto;
         }
         nav {
             margin-top: 20px;
