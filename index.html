@@ -10,26 +10,27 @@
             font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
-            color: #333333; /* Set default text color to grey */
+            color: #333333;
             line-height: 1.6;
             background-color: #f0f0f0;
         }
 
         header {
             width: 100%;
-            max-width: 800px;
+            max-width: 1100px; /* Match max-width with main for alignment */
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: 20px 40px;
             background-color: #ffffff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            color: #000000; /* Keep header text black */
+            margin: 0 auto;
+            box-sizing: border-box;
         }
 
         header h1 {
             margin: 0;
-            font-size: 1.2em; /* Slightly larger font size for h1 */
+            font-size: 1.2em;
             font-weight: 550;
             font-family: 'Montserrat', sans-serif;
         }
@@ -55,33 +56,34 @@
 
         main {
             width: 100%;
-            max-width: 800px;
+            max-width: 1100px; /* Ensure the same width as header */
             display: flex;
-            padding: 40px;
+            padding: 20px;
             background-color: #ffffff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 0px auto; /* Add top margin to separate from header */
+            box-sizing: border-box;
         }
 
-        .profile-sidebar {
-            width: 200px;
-            margin-right: 40px;
+        .sidebar {
+            width: 250px;
             text-align: center;
+            margin-right: 30px;
         }
 
-        .profile-sidebar img {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 150px;
-            height: 150px;
+        .sidebar img {
+            width: 200px;
+            height: 200px;
             border-radius: 50%;
             object-fit: cover;
+            margin-bottom: 20px;
         }
 
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-top: 10px;
+            margin-bottom: 10px;
         }
 
         .social-icons a img {
@@ -96,53 +98,33 @@
 
         .content {
             flex: 1;
-            color: #333333; /* Make main text grey */
-            text-align: left; /* Ensure content text is aligned to the left */
+            color: #333333;
         }
 
         .content h1 {
-            font-size: 1.5em; /* Slightly larger font size for h1 in content */
+            font-size: 1.5em;
             font-weight: 600;
             font-family: 'Montserrat', sans-serif;
             margin-top: 0;
-            color: #333333; /* Keep h1 in content grey */
-        }
-
-        .content h2 {
-            font-size: 1.1em; /* Slightly larger font size for h2 in content */
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333; /* Keep h2 in content grey */
-        }
-
-        .content h3 {
-            font-size: 1em; /* Font size for h3 */
-            font-weight: 300;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333; /* Keep h3 in content grey */
+            color: #333333;
         }
 
         .content p {
-            font-size: 0.9em; /* Font size for paragraphs */
-            font-weight: 250;
+            font-size: 1em;
             margin: 10px 0;
         }
 
-        footer {
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-            padding: 20px 0;
-            background-color: #ffffff;
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-            color: #333333; /* Footer text grey */
+        .content a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
-
 <header>
     <h1>Zheng Fu</h1>
     <nav>
@@ -151,7 +133,6 @@
         <a href="cv.html">CV</a>
     </nav>
 </header>
-
 <main>
     <div class="profile-sidebar">
         <img src="images/profile-picture.jpeg" alt="Profile Picture">
@@ -175,17 +156,18 @@
     </div>
 
     <div class="content">
-        <h1>Biography</h1>
-        <p> I am a Ph.D. candidate of sociology at Columbia University. My research contributes to the intersection of political sociology and science and technology studies, exploring how knowledge and politics are intertwined with each other. I employ a diverse array of methodologies, encompassing ethnography, interviews, computational text analysis, network analysis, national surveys, and online experiments. While my regional focus is on China, I also conduct global comparative research focusing on China-U.S. comparisons and China-U.S. relations. My work has been published in journals such as <em>American Political Science Review</em> and <em>Sociological Forum</em>.</p>
+        <h1>about me</h1>
+        <p> I am a Ph.D. candidate of sociology at Columbia University. My research contributes to the intersection of political sociology and science and technology studies, exploring how knowledge and politics are intertwined with each other. I employ a diverse array of methodologies, encompassing ethnography, interviews, computational text analysis, network analysis, national surveys, and online experiments. </p>
 
-        <p> My dissertation reveals the networked (both in terms of social network and Actor Network Theory) nature of political power, specifically how the Chinese state relies on intermediaries that straddle the space between state, market, and society to perform the work of legitimacy, translating the subjects’ interests along the lines of the state, and vice versa. I examine two crucial moments in the state’s governance of the contentious field of worker-employer relations: (1) the work of shoring up the legitimacy of the new labor law and (2) the work of saving the legitimacy of the state when open unrest is almost unavoidable. The earlier version of my paper "Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime", developed out of my dissertation, has won the Best Graduate Student Paper Award at the Political Sociology section of ASA and is now under review.</p>
+        <p>While my regional focus is on China, I also conduct global comparative research focusing on China-U.S. comparisons and China-U.S. relations. My work has been published in journals such as <em>American Political Science Review</em> and <em>Sociological Forum</em>.</p>
+
+        <p> My dissertation reveals the networked (both in terms of social network and Actor Network Theory) nature of political power, specifically how the Chinese state relies on intermediaries that straddle the space between state, market, and society to perform the work of legitimacy. I examine two crucial moments in the state’s governance of the contentious field of worker-employer relations: (1) the work of shoring up the legitimacy of the new labor law and (2) the work of saving the legitimacy of the state when open unrest is almost unavoidable. Earlier version of my paper "Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime", developed out of my dissertation, has won the Best Graduate Student Paper Award at the Political Sociology section of ASA and is now under review.</p>
 
         <p> My second line of interest draws on transnational comparative design to explore the politics of knowledge and perception. With co-authors, I have studied how expert narratives, contingent on sociopolitical context of each society, shape the public perception of the global pandemic. In another project, I investigated how international relations impact the perception of migrants using a conjoint experiment design with co-authors.</p>
 
-        <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S., with each representing one paradigm of fact-checking. My project highlights that the current debate on the severity of the “misinformation” phenomenon neglected a key question: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
+        <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S., with each representing one paradigm of fact-checking. I ask: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
     </div>
 </main>
-
 
 </body>
 </html>
