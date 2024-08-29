@@ -60,7 +60,8 @@
             background-color: #ffffff;
             box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start; /* Align items to the left */
+            text-align: left; /* Ensure text is aligned to the left */
         }
         .profile-sidebar {
             width: 200px;
@@ -91,26 +92,34 @@
         }
         .content {
             flex: 1;
-            text-align: center;
+            text-align: flex-start;
             color: #333333; /* Make main text grey */
         }
+
         .content h1 {
-            font-size: 1.1em; /* Slightly larger font size for h1 in content */
-            font-weight: 530;
+            font-size: 1.5em; /* Slightly larger font size for h1 in content */
+            font-weight: 600;
             font-family: 'Montserrat', sans-serif;
             margin-top: 0;
             color: #333333; /* Keep h1 in content grey */
         }
-        .content h2 {
-            font-size: 1em; /* Slightly larger font size for h2 */
-            font-weight: 500;
+        main.content h2 {
+            font-size: 1.1em; /* Slightly larger font size for h1 in content */
+            font-weight: 600;
+            font-family: 'Montserrat', sans-serif;
+            margin-top: 0;
+            color: #333333; /* Keep h1 in content grey */
+        }
+        .content section h3 {
+            font-size: 1em ; /* Slightly larger font size for h2 */
+            font-weight: 300;
             font-family: 'Montserrat', sans-serif;
             margin-top: 0;
             color: #333333; /* Keep h2 in content grey */
         }
-        .content p {
-            font-size: 1em; /* Keep paragraph font size as normal */
-            font-weight: 300;
+        .content section p {
+            font-size: 0.9em ; /* Keep paragraph font size as normal */
+            font-weight: 250;
             margin: 10px 0;
         }
         footer {
@@ -135,56 +144,61 @@
     </nav>
 </header>
 
-<main>
+<main class = "content">
+    <article>
+        <h1>Research</h1>
+        <p> * = co-first authorship; + = first authorship.</p>
+    </article>
     <section class="theme theme1">
-        <h2>Network Approach to Power</h2>
+        <h2>1. Network Approach to Power</h2>
         <article>
-            <h3>Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime <em> Under Review </em></h3>
-            <p>Brief description of the paper and its significance.</p>
+            <h3>Zheng Fu. “Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime” (<em> Under Review </em>)</h3>
+            <p>Migrant workers are considered less militant in collective action than locals, partly because they lack social ties in the receiving community. However, in China’s Pearl River Delta, I find the opposite. Comparing five cases of labor protest from 2014 to 2016 drawing on ethnographic observations, interviews, and labor activists’ records, I show that migrant peasant workers are less exposed to the local state’s demobilization efforts than local peasant workers because the former have fewer and less heterogeneous social ties in the receiving community. In particular, they have fewer social ties with members of the community affiliated with or reliant on the local state. I describe these paths between would-be protesters, intermediaries, and the local state as “conduits of power,” exposing would-be protesters to soft state repression. Migrant peasant workers’ limited networks reduce the conduits of power in their network, leading to a “missing binds” effect. This paper offers three key insights: First, in totalizing regimes, specific community ties can hinder labor protests, adding nuance to social movement unionism. Second, migrant workers’ insulated network positions in autocracies can aid collective resistance. Third, migration is a crucial factor driving labor protests in China, with ongoing demographic changes potentially impacting future labor militancy.</p>
             <a href="path/to/paper1.pdf" class="paper-link" target="_blank">Read Paper</a>
         </article>
         <article>
-            <h3>Paper Title 2</h3>
+            <h3>Zheng Fu+, Gil Eyal. “The Work of Legitimacy in China: The Implementation of the 2008 Labor Contract Law in a Chinese City” (<em> Under Review </em>)</h3>
+            <p>What makes a law legitimate? How is compliance with new legislation achieved? This article suggests that answers to these questions require analyzing the “work of legitimacy,” namely the actors and practices involved in implementing the law and tasked with persuading social actors to comply with it. We argue that ANT’s concept of “translation” offers a useful model for analyzing the work of legitimacy, specifically how the interests of relevant social actors are translated so that compliance with the law becomes intelligible as a means of pursuing their own interests. Additionally, we argue that the social actor performing the work of legitimacy is not pre-given, but forms itself in and through the work of weaving a network across the boundary between state and society. We demonstrate the utility of this approach by examining the legitimization process of the 2008 labor law reform in one Chinese locality, Waterfront District in Pearl River Delta (PRD). We show how a loose coalition of local state officials, former officials, social organizations and labor lawyers translated the interests of large employers and managers to accord with the “public employment relations service” they offered, and thus harnessed them into compliance with the labor law.    </p>
+            <a href="path/to/paper2.pdf" class="paper-link" target="_blank">Read Paper</a>
+        </article>
+        <article>
+            <h3>Gil Eyal, Zheng Fu. “Legitimacy, Trust in Experts, and Legal Institutions” (invited submission at <em>Annual Review of Law and Social Science</em>)</h3>
             <p>Brief description of the paper and its significance.</p>
             <a href="path/to/paper2.pdf" class="paper-link" target="_blank">Read Paper</a>
         </article>
         <!-- Add more papers as needed -->
     </section>
 
+
     <section class="theme theme2">
-        <h2>Global Comparative Sociology</h2>
+        <h2>2. Global Comparative Sociology</h2>
         <article>
-            <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/socf.12819" target="_blank">“‘It’s (Not) Like the Flu’: Expert Narratives and the Covid-19 Pandemic in Mainland China, Hong Kong, and the United States”</a></h3>
-            <p>Brief description of the paper and its significance.</p>
-            <a href="path/to/paper3.pdf" class="paper-link" target="_blank">Read Paper</a>
+            <h3>Larry Au*, Zheng Fu*, and Chuncheng Liu*.2022.<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/socf.12819" target="_blank">“‘It’s (Not) Like the Flu’: Expert Narratives and the Covid-19 Pandemic in Mainland China, Hong Kong, and the United States”</a><em>Sociological Forum</em></h3>
+            <p>We trace the crafting of expert narratives during the initial months of the COVID-19 pandemic in Mainland China, Hong Kong, and the United States. By expert narratives, we refer to how experts drew different les- sons from past disease experiences to guide policymakers and the public amidst uncertainty. These expert nar- ratives were mobilized in different sociopolitical contexts, resulting in varying configurations of expertise networks and allies that helped contain and mitigate COVID-19. In Mainland China, experts carefully advanced a managed narrative, emphasizing the new pandemic akin to the 2003 SARS outbreak can be man- aged while destressing the similar mistakes the government made during the two crises. In Hong Kong, experts invoked a distrust narrative, pointing to a potential coverup of COVID-19 similar to SARS, activating allies in civil society to pressure policymakers to act. In the United States, experts were mired in a contested narra- tive and COVID-19 was compared to different diseases; varying interpretations of COVID-19’s consequences was exacerbated by political polarization. In expert narratives, the resonance of the past is emergent: the past becomes a site of struggle and a cultural object that is presented as potentially useful in solving problems of the present.</p>
+            
         </article>
         <article>
-            <h3>Paper Title 4</h3>
-            <p>Brief description of the paper and its significance.</p>
-            <a href="path/to/paper4.pdf" class="paper-link" target="_blank">Read Paper</a>
+            <h3>Andreas Wimmer, Bart Bonikowski, Charles Crabtree, Zheng Fu, Matt Golder and Kiyoteru Tsutsui. 2024. <a href="https://doi.org/10.1017/S0003055424000753 " target="_blank">“Geo-political rivalry and anti-immigrant sentiment: A conjoint experiment in 22 countries”</a><em>American Political Science Review</em></h3>
+            <p>Introducing an international relations perspective into the literature on anti-immigrant attitudes, we hypothesize that immigrants from rival countries will be shunned and immigrants from allied countries preferred, especially by respondents who identify more strongly with the nation. We fielded a forced-choice conjoint experiment in 22 countries, whereby respondents chose between applicants for permanent resident status with randomized attributes. We identified rival and allied countries of origin for each surveyed country, with one such pair sharing a similar racial and cultural make-up as the majority of respondents, and one pair being more dissimilar. We find that discrimination against immigrants from rival states is so pronounced that it results in a net preference for racially and culturally dissimilar immigrants. Since we fielded the surveys amidst the Russian invasion of Ukraine, we are able to leverage exogenous changes in the intensity of one rivalry, providing further evidence for the proposed mechanism.</p>
+            
         </article>
         <!-- Add more papers as needed -->
     </section>
 
     <section class="theme theme3">
-        <h2>Theme 3: Broad Research Area Three</h2>
+        <h2>3. Politics of Science and Knowledge</h2>
         <article>
-            <h3>Paper Title 5</h3>
-            <p>Brief description of the paper and its significance.</p>
-            <a href="path/to/paper5.pdf" class="paper-link" target="_blank">Read Paper</a>
+            <h3>Practice of Fact-checking: A Multi-national Comparison <em>Work in Progress.</em></h3>
         </article>
         <article>
-            <h3>Paper Title 6</h3>
-            <p>Brief description of the paper and its significance.</p>
-            <a href="path/to/paper6.pdf" class="paper-link" target="_blank">Read Paper</a>
+            <h3>Zheng Fu, Chuncheng Liu. "Public Perception and Preference of Government AI in Context: A National Survey in China."<em>Work in Progress.</em></h3>
         </article>
         <!-- Add more papers as needed -->
     </section>
+
 </main>
 
-<footer>
-    <p>&copy; 2024 Zheng Fu. All rights reserved.</p>
-</footer>
+
 
 </body>
 </html>
