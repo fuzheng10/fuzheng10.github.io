@@ -17,7 +17,6 @@
 
         header {
             width: 100%;
-            max-width: 1100px; /* Match max-width with main for alignment */
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -56,7 +55,6 @@
 
         main {
             width: 100%;
-            max-width: 1100px; /* Ensure the same width as header */
             display: flex;
             padding: 20px;
             background-color: #ffffff;
@@ -65,40 +63,37 @@
             box-sizing: border-box;
         }
 
-        .sidebar {
-            width: 250px;
-            text-align: center;
-            margin-right: 30px;
-        }
-
-        .sidebar img {
+        .profile-sidebar {
             width: 200px;
-            height: 200px;
+            margin-right: 40px;
+            text-align: center;
+        }
+        .profile-sidebar img {
+            display: block;
+            margin: 0 auto 20px auto;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin-bottom: 20px;
         }
-
         .social-icons {
             display: flex;
             justify-content: center;
             gap: 10px;
-            margin-bottom: 10px;
+            margin-top: 10px;
         }
-
         .social-icons a img {
             width: 30px;
             height: 30px;
             transition: transform 0.3s ease;
         }
-
         .social-icons a img:hover {
             transform: scale(1.1);
         }
-
         .content {
             flex: 1;
-            color: #333333;
+            text-align: flex-start;
+            color: #333333; /* Make main text grey */
         }
 
         .content h1 {
@@ -165,7 +160,7 @@
 
         <p> My second line of interest draws on transnational comparative design to explore the politics of knowledge and perception. With co-authors, I have studied how expert narratives, contingent on sociopolitical context of each society, shape the public perception of the global pandemic. In another project, I investigated how international relations impact the perception of migrants using a conjoint experiment design with co-authors.</p>
 
-        <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S., with each representing one paradigm of fact-checking. I ask: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
+        <p> The next project that I am working on combines my interests in the micro-foundations of political power and the politics of knowledge to investigate the practice of contesting facts between China and the U.S.. I ask: What constitutes “misinformation” in the first place? Who determines what is “misinformation”, and how do they achieve this? I empirically study how facts are contested across different fact-checking paradigms and the expert-lay divide using a combination of qualitative and computational tools, focusing on the “doubt methodologies” of different actors.</p>
     </div>
 </main>
 
