@@ -3,217 +3,166 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333333;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 1.2em; /* Slightly larger font size for h1 */
-            font-weight: 550;
-            font-family: 'Montserrat', sans-serif;
-        }
-        header nav {
-            display: flex;
-            align-items: center;
-        }
-        header nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #000000;
-            font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s ease;
-        }
-        header nav a:hover {
-            border-bottom: 2px solid #000000;
-        }
-        main {
-            width: 100%;
-            display: flex;
-            padding: 70px;
-            background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            flex-direction: column;
-            align-items: flex-start; /* Align items to the left */
-            text-align: left; /* Ensure text is aligned to the left */
-        }
-        .profile-sidebar {
-            width: 200px;
-            margin-right: 40px;
-            text-align: center;
-        }
-        .profile-sidebar img {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .social-icons a img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s ease;
-        }
-        .social-icons a img:hover {
-            transform: scale(1.1);
-        }
-        .content {
-            flex: 1;
-            text-align: flex-start;
-            color: #333333; /* Make main text grey */
-        }
-
-        .content h1 {
-            font-size: 1.5em; /* Slightly larger font size for h1 in content */
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333; /* Keep h1 in content grey */
-        }
-        .content h2 {
-            font-size: 1.1em; /* Slightly larger font size for h1 in content */
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333; /* Keep h1 in content grey */
-        }
-        .content h3 {
-            font-size: 1em ; /* Slightly larger font size for h2 */
-            font-weight: 450;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333; /* Keep h2 in content grey */
-        }
-        .content p {
-            font-size: 1em ; /* Keep paragraph font size as normal */
-            font-weight: 250;
-            margin: 10px 0;
-        }
-        footer {
-            width: 100%;
-            max-width: 800px;
-            text-align: center;
-            padding: 20px 0;
-            background-color: #ffffff;
-            box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
-            color: #333333; /* Footer text grey */
-        }
-    </style>
+    <title>Zheng Fu | Research</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="site-name">Zheng Fu</p>
+            <nav class="site-nav" aria-label="Primary">
+                <a href="index.html">Home</a>
+                <a class="active" href="research.html">Research</a>
+                <a href="cv.html">CV</a>
+            </nav>
+        </div>
+    </header>
 
-<header>
-    <h1>Zheng Fu</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="cv.html">CV</a>
-    </nav>
-</header>
-
-<main class = "content">
-    <article>
-        <h1>research</h1>
-        <p> * = co-first authorship; + = first authorship.</p>
-    </article>
-    <section class="theme theme1">
-        <h2>1. The Social Life of AI</h2>
-        <article>
-            <h3>- Zheng Fu+, Chuncheng Liu. “Mediated Recognition: AI-Legibility, Capital, and the Social Structure of Algorithmic Preference.” (<em> Under Review </em>)</h3>
-        </article>
-        <article>
-            <h3>- Zheng Fu+, Chuncheng Liu. “Power in the Loop: Algorithmic Governance and Legitimacy under Authoritarianism.” (<em> Under Review </em>)</h3>
-        </article>
-        <article>
-            <h3>- Ongoing collaborative work with Trust Callaboratory “AI and the New Digital Divide: Understanding Non-Use in Vulnerable Communities.” (<em>Data in Progress</em>)</h3>
-        </article>
-        <article>
-            <h3>- Ongoing collaborative work “The AI Future, Unevenly Imagined: How Different Universities Imagine Their Students’ Roles in AI Society” (<em>Data in Progress</em>)</h3>
-        </article>
-        <!-- Add more papers as needed -->
-    </section>
-
-
-    <section class="theme theme2">
-        <h2>2. The Social Production of the Information Crisis</h2>
-        <article>
-            <h3>Article series in preparation</h3>
-            <p> In a series of articles in preparation, I collaborate with my co-author Dr.Mian Chen to investigate how the macro framing of information crisis has been constructed.
-                We draw on computational text analysis to analyze the framing of the information crisis in U.S. mass media, focused on how contemporary media prognosis of the information crisis has
-                deep roots in the framing of the information crisis in the 20th century. 
-                This largely overlooked historical perspective allows us to understand why certain aspects of the information crisis have been
-                emphasized while others have been ignored. 
-                 
-        
+    <main class="page">
+        <section class="page-intro surface">
+            <p class="eyebrow">Research Agenda</p>
+            <h1>Research</h1>
+            <p>
+                My work develops across three connected areas: the social life of AI, the production of the information crisis, and legitimacy as a cultural and political process. The projects below are organized to make ongoing work, accepted papers, and published articles easier to scan across screen sizes.
             </p>
-        </article>
-        <article>
-            <h3>Book Manuscript in preparation</h3>
-            <p>At the micro level of the social production of information crisis,
-                my project problematizes the distinction between “fact” and “misinformation” and explores how the line between misinformation and fact is constructed. 
-                My preliminary qualitative research shows that the most conspiratorial or sensational content is often ignored by both professional and lay fact-checkers. However, crowd-sourced fact-checking surfaces fringe but popular conspiratorial posts more effectively. I hypothesize that professional fact-checkers focus on mainstream content, while crowd-sourced fact-checking draws from a pool of fact-checkers with more omnivorous media-consuming habits, making them more likely to encounter fringe misinformation. This work complements my broader research agenda by examining how algorithmically mediated information ecosystems shape public discourse.</p>
-            
-        </article>
-        <!-- Add more papers as needed -->
-    </section>
+            <p class="section-intro">* = co-first authorship. + = first authorship.</p>
+        </section>
 
-    <section class="theme theme3">
-        <h2>3. Legitimacy and the Politics of Culture</h2>
-        <article>
-            <h3>- Zheng Fu+, Gil Eyal. “The Work of Legitimacy in China: The Implementation of the 2008 Labor Contract Law in a Chinese City” (<em> Manuscript in preparation </em>)</h3>
-            
-        </article>        
-        <article>
-            <h3>- Zheng Fu. “Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime” (<em>Accepted at Sociological Forum </em>)</h3>
-            <p>Migrant workers are considered less militant in collective action than locals, partly because they lack social ties in the receiving community. However, in China’s Pearl River Delta, I find the opposite. Comparing five cases of labor protest from 2014 to 2016 drawing on ethnographic observations, interviews, and labor activists’ records, I show that migrant peasant workers are less exposed to the local state’s demobilization efforts than local peasant workers because the former have fewer and less heterogeneous social ties in the receiving community. In particular, they have fewer social ties with members of the community affiliated with or reliant on the local state. I describe these paths between would-be protesters, intermediaries, and the local state as “conduits of power,” exposing would-be protesters to soft state repression. Migrant peasant workers’ limited networks reduce the conduits of power in their network, leading to a “missing binds” effect. This paper offers three key insights: First, in totalizing regimes, specific community ties can hinder labor protests, adding nuance to social movement unionism. Second, migrant workers’ insulated network positions in autocracies can aid collective resistance. Third, migration is a crucial factor driving labor protests in China, with ongoing demographic changes potentially impacting future labor militancy.</p>
-        </article>
-        <article>
-            <h3>- Gil Eyal, Zheng Fu.2025.<a href="https://doi-org.proxy.library.stonybrook.edu/10.1146/annurev-lawsocsci-062124-122722" target="_blank">“The Work of Legitimacy”</a> <em>Annual Review of Law and Social Science</em></h3>
-            <p>What makes a law or regulation legitimate? This article develops a sociological approach that locates legitimacy not outside the law but in the work performed by a network of actors that cuts across the boundaries of the state. Drawing on Weber, Habermas, and Szelenyi, we suggest that legitimacy should be understood as the element that increases the probability of compliance with legal commands. We argue that this element cannot be a psychological “belief in legitimacy” but should be understood as work performed by the staff to construct and repair the discursive mechanisms that make legal commands defensible. We then draw on Actor-Network Theory to analyze this work as translation and offer two empirical examples: labor legislation in China and vaccine mandates in the United States. Throughout, we compare our approach with different lines of research in the law and society literature, noting where our conclusions converge and where they represent potential revisions to this literature.   </p>
-        </article>
-        <article>
-            <h3>- Andreas Wimmer, Bart Bonikowski, Charles Crabtree, Zheng Fu, Matt Golder and Kiyoteru Tsutsui. 2024. <a href="https://doi.org/10.1017/S0003055424000753 " target="_blank">“Geo-political rivalry and anti-immigrant sentiment: A conjoint experiment in 22 countries”</a><em>American Political Science Review</em></h3>
-            <p>Introducing an international relations perspective into the literature on anti-immigrant attitudes, we hypothesize that immigrants from rival countries will be shunned and immigrants from allied countries preferred, especially by respondents who identify more strongly with the nation. We fielded a forced-choice conjoint experiment in 22 countries, whereby respondents chose between applicants for permanent resident status with randomized attributes. We identified rival and allied countries of origin for each surveyed country, with one such pair sharing a similar racial and cultural make-up as the majority of respondents, and one pair being more dissimilar. We find that discrimination against immigrants from rival states is so pronounced that it results in a net preference for racially and culturally dissimilar immigrants. Since we fielded the surveys amidst the Russian invasion of Ukraine, we are able to leverage exogenous changes in the intensity of one rivalry, providing further evidence for the proposed mechanism.</p>
-            
-        </article>
-        </article>
-            <h3>- Larry Au*, Zheng Fu*, and Chuncheng Liu*.2022.<a href="https://onlinelibrary.wiley.com/doi/full/10.1111/socf.12819" target="_blank">“‘It’s (Not) Like the Flu’: Expert Narratives and the Covid-19 Pandemic in Mainland China, Hong Kong, and the United States”</a><em>Sociological Forum</em></h3>
-            <p>We trace the crafting of expert narratives during the initial months of the COVID-19 pandemic in Mainland China, Hong Kong, and the United States. By expert narratives, we refer to how experts drew different les- sons from past disease experiences to guide policymakers and the public amidst uncertainty. These expert nar- ratives were mobilized in different sociopolitical contexts, resulting in varying configurations of expertise networks and allies that helped contain and mitigate COVID-19. In Mainland China, experts carefully advanced a managed narrative, emphasizing the new pandemic akin to the 2003 SARS outbreak can be man- aged while destressing the similar mistakes the government made during the two crises. In Hong Kong, experts invoked a distrust narrative, pointing to a potential coverup of COVID-19 similar to SARS, activating allies in civil society to pressure policymakers to act. In the United States, experts were mired in a contested narra- tive and COVID-19 was compared to different diseases; varying interpretations of COVID-19’s consequences was exacerbated by political polarization. In expert narratives, the resonance of the past is emergent: the past becomes a site of struggle and a cultural object that is presented as potentially useful in solving problems of the present.</p>
-            
-        </article>
-        <!-- Add more papers as needed -->
-    </section>
+        <div class="research-sections">
+            <section class="section-card surface">
+                <div class="section-heading">
+                    <h2>1. The Social Life of AI</h2>
+                    <p>What is legible to AI, how sociopolitical context shapes the perception of AI, and the uneven adoption of AI.</p>
+                </div>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Revise and Resubmit</span>
+                            <span class="category-tag">Working Paper</span>
+                        </div>
+                        <h3>“Mediated Recognition: AI-Legibility, Capital, and the Social Structure of Algorithmic Preference”</h3>
+                        <p class="card-meta">Zheng Fu+, Chuncheng Liu</p>
+                        <p class="card-copy">This project examines how different forms of capital are legible to AI differently and how this in turn, shapes the perception of AI.</p>
+                    </article>
 
-</main>
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Under Review</span>
+                            <span class="category-tag">Working Paper</span>
+                        </div>
+                        <h3>“Power in the Loop: Algorithmic Governance and Legitimacy under Authoritarianism”</h3>
+                        <p class="card-meta">Zheng Fu+, Chuncheng Liu</p>
+                        <p class="card-copy">This project studies how people evaluate government decisions mediated by algorithms, with particular attention to how authoritarian contexts influence these evaluations.</p>
+                    </article>
 
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Data in Progress</span>
+                            <span class="category-tag">Collaborative Project</span>
+                        </div>
+                        <h3>“AI and the New Digital Divide: Understanding Non-Use ”</h3>
+                        <p class="card-meta">Ongoing collaboration with the Trust Collaboratory</p>
+                        <p class="card-copy">This project investigates how AI non-use might lead to a different kind of digital divide, one where non-use is not only driven by lack of access but also expressed as active resistance.</p>
+                    </article>
 
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Data in Progress</span>
+                            <span class="category-tag">Collaborative Project</span>
+                        </div>
+                        <h3>“The AI Future, Unevenly Imagined: How Different Universities Imagine Their Students’ Roles in AI Society”</h3>
+                        <p class="card-meta">Ongoing collaborative project</p>
+                        <p class="card-copy">We study how universities frame AI literacy and future AI citizenship, with a focus on how differen institutions imagine different AI futures for their students.</p>
+                    </article>
+                </div>
+            </section>
 
+            <section class="section-card surface">
+                <div class="section-heading">
+                    <h2>2. The Social Production of the Information Crisis</h2>
+                    <p>Research on how media institutions, fact-checking practices, and historical narratives shape the meaning of misinformation.</p>
+                </div>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Under Review</span>
+                            <span class="category-tag">Working Paper</span>
+                        </div>
+                        <h3>“Propaganda or Misinformation: The Framing of the Misinformation Problem in U.S. Mainstream Media”</h3>
+                        <p class="card-meta">Zheng Fu, Mian Chen</p>
+                        <p class="card-copy">Using computational text analysis, this project traces how U.S. mainstream media have framed the information crisis and shows how contemporary narratives draw on longer twentieth-century histories.</p>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Project in Progress</span>
+                            <span class="category-tag">Monograph</span>
+                        </div>
+                        <h3>“The Fight over Epistemic Authority: Fact-checking as Contestation”</h3>
+                        <p class="card-meta">Zheng Fu</p>
+                        <p class="card-copy">This project problematizes the boundary between “fact” and “misinformation,” showing how professional and crowd-sourced fact-checking systems surface different kinds of claims and publics.</p>
+                    </article>
+                </div>
+            </section>
+
+            <section class="section-card surface">
+                <div class="section-heading">
+                    <h2>3. The Culture of Politics and the Politics of Culture</h2>
+                    <p>Projects on institutional legitimacy, migrant labor politics, and the social forces that shape cultural and political judgments.</p>
+                </div>
+                <div class="research-grid">
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Manuscript in Preparation</span>
+                            <span class="category-tag">Working Paper</span>
+                        </div>
+                        <h3>“The Work of Legitimacy in China: The Implementation of the 2008 Labor Contract Law in a Chinese City”</h3>
+                        <p class="card-meta">Zheng Fu+, Gil Eyal</p>
+                        <p class="card-copy">This paper investigates how legitimacy is built through expertise at the boundary of the state, law, and business interests.</p>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">Accepted</span>
+                            <span class="category-tag">Sociological Forum</span>
+                        </div>
+                        <h3>“Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime”</h3>
+                        <p class="card-meta">Zheng Fu</p>
+                        <p class="card-copy">Drawing on ethnographic observations, interviews, and labor activist records, this article shows how fewer local ties can reduce exposure to soft repression and unexpectedly facilitate collective resistance.</p>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">2025</span>
+                            <span class="category-tag">Annual Review of Law and Social Science</span>
+                        </div>
+                        <h3><a href="https://doi.org/10.1146/annurev-lawsocsci-062124-122722" target="_blank" rel="noreferrer">“The Work of Legitimacy”</a></h3>
+                        <p class="card-meta">Gil Eyal, Zheng Fu</p>
+                        <p class="card-copy">This article develops a sociological theory of legitimacy as work performed by networks of actors who make legal and regulatory commands defensible in practice.</p>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">2024</span>
+                            <span class="category-tag">American Political Science Review</span>
+                        </div>
+                        <h3><a href="https://doi.org/10.1017/S0003055424000753" target="_blank" rel="noreferrer">“Geo-political Rivalry and Anti-Immigrant Sentiment: A Conjoint Experiment in 22 Countries”</a></h3>
+                        <p class="card-meta">Andreas Wimmer, Bart Bonikowski, Charles Crabtree, Zheng Fu, Matt Golder, Kiyoteru Tsutsui</p>
+                        <p class="card-copy">This article shows how geopolitical rivalry shapes anti-immigrant preferences and can outweigh racial or cultural similarity in public evaluations of migrants.</p>
+                    </article>
+
+                    <article class="research-card">
+                        <div class="status-row">
+                            <span class="status">2022</span>
+                            <span class="category-tag">Sociological Forum</span>
+                        </div>
+                        <h3><a href="https://onlinelibrary.wiley.com/doi/full/10.1111/socf.12819" target="_blank" rel="noreferrer">“It’s (Not) Like the Flu: Expert Narratives and the Covid-19 Pandemic in Mainland China, Hong Kong, and the United States”</a></h3>
+                        <p class="card-meta">Larry Au*, Zheng Fu*, Chuncheng Liu*</p>
+                        <p class="card-copy">We compare how mainstream media mobilized past disease experiences across different sociopolitical settings, showing that the cultural meaning of crisis is produced through competing networks of expertise and allies, formed in distinct sociopolitical contexts.</p>
+                    </article>
+                </div>
+            </section>
+        </div>
+    </main>
 </body>
 </html>

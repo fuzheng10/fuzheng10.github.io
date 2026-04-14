@@ -3,172 +3,126 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zheng Fu's Profile</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-    <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333333;
-            line-height: 1.6;
-            background-color: #f0f0f0;
-        }
-
-        header {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px 40px;
-            background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 1.2em;
-            font-weight: 550;
-            font-family: 'Montserrat', sans-serif;
-        }
-
-        header nav {
-            display: flex;
-            align-items: center;
-        }
-
-        header nav a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #000000;
-            font-weight: 500;
-            font-family: 'Montserrat', sans-serif;
-            border-bottom: 2px solid transparent;
-            transition: border-bottom 0.3s ease;
-        }
-
-        header nav a:hover {
-            border-bottom: 2px solid #000000;
-        }
-
-        main {
-            width: 100%;
-            display: flex;
-            padding: 20px;
-            background-color: #ffffff;
-            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-            margin: 0px auto; /* Add top margin to separate from header */
-            box-sizing: border-box;
-        }
-
-        .profile-sidebar {
-            width: 200px;
-            margin-right: 40px;
-            text-align: center;
-        }
-        .profile-sidebar img {
-            display: block;
-            margin: 0 auto 20px auto;
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin-top: 10px;
-        }
-        .social-icons a img {
-            width: 30px;
-            height: 30px;
-            transition: transform 0.3s ease;
-        }
-        .social-icons a img:hover {
-            transform: scale(1.1);
-        }
-        .content {
-            flex: 1;
-            text-align: flex-start;
-            color: #333333; /* Make main text grey */
-        }
-
-        .content h1 {
-            font-size: 1.5em;
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-            margin-top: 0;
-            color: #333333;
-        }
-
-        .content p {
-            font-size: 1em;
-            margin: 10px 0;
-        }
-
-        .content a {
-            color: #0066cc;
-            text-decoration: none;
-        }
-
-        .content a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Zheng Fu | Home</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header>
-    <h1>Zheng Fu</h1>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="research.html">Research</a>
-        <a href="cv.html">CV</a>
-    </nav>
-</header>
-<main>
-    <div class="profile-sidebar">
-        <img src="images/profile-picture.jpeg" alt="Profile Picture">
-        <div class="social-icons">
-            <a href="https://linkedin.com/in/zheng-fu-533bb480" target="_blank">
-                <img src="icons/linkedin-icon.png" alt="LinkedIn">
-            </a>
-            <a href="https://x.com/fu10zheng" target="_blank">
-                <img src="icons/twitter-icon.png" alt="Twitter">
-            </a>
-            <a href="https://github.com/fuzheng10" target="_blank">
-                <img src="icons/github-icon.png" alt="GitHub">
-            </a>
-            <a href="https://scholar.google.com/citations?user=XkeaHFQAAAAJ&hl=en" target="_blank">
-                <img src="icons/googlescholar-icon.png" alt="Google Scholar">
-            </a>
-            <a href="https://bsky.app/profile/fuzheng.bsky.social" target="_blank">
-                <img src="icons/bluesky-icon.svg" alt="Bluesky">
-            </a>
+    <header class="site-header">
+        <div class="header-inner">
+            <p class="site-name">Zheng Fu</p>
+            <nav class="site-nav" aria-label="Primary">
+                <a class="active" href="index.html">Home</a>
+                <a href="research.html">Research</a>
+                <a href="cv.html">CV</a>
+            </nav>
         </div>
-    </div>
+    </header>
 
-    <div class="content">
-        <h1>about me</h1>
-        <p>
-        I am a PRODIG+ Fellow in Critical AI, with my tenure home in the Department of Journalism. My research sits at the intersection of knowledge, technology, and culture, examining the politics of culture with particular attention to how technologies mediate and reconfigure cultural dynamics. My work has been published in journals such as <em>American Political Science Review</em>, <em>Annual Review of Law and Social Science</em>, and <em>Sociological Forum</em>. Much of my research is comparative, either through cross-national comparisons or through a comparative lens applied to a single research site. Methodologically, I employ a diverse toolkit that includes ethnography, interviews, computational text analysis, network analysis, national surveys, and online experiments.
-        </p>
+    <main class="page">
+        <section class="hero-grid">
+            <aside class="profile-card surface">
+                <img class="profile-photo" src="images/profile-picture.jpeg" alt="Portrait of Zheng Fu">
+                <p class="eyebrow">Stony Brook University</p>
+                <h2>Zheng Fu</h2>
+                <p class="profile-role">PRODIG+ Fellow in Critical AI<br>Department of Journalism and Department of Writing and Rhetorics</p>
+                <p class="profile-contact"><a href="mailto:zheng.fu@stonybrook.edu">zheng.fu@stonybrook.edu</a></p>
 
-        <p>
-        My current research develops along two main lines. The first investigates how artificial intelligence reshapes communication and sociopolitical life, both at the micro level of human–AI interactions and in broader patterns of human–human relations mediated by AI systems. Within this domain, I examine how individuals’ social positionalities shape their engagement with AI technologies, including preferences toward AI and perceptions of the legitimacy of government decisions mediated by algorithms, particularly in authoritarian contexts. I also study how the diffusion of AI expertise can reinforce or challenge existing inequalities, focusing on uneven AI governance across higher education institutions and disparities in the adoption of AI technologies across populations.
-        </p>
+                <div class="social-icons" aria-label="Social links">
+                    <a href="https://linkedin.com/in/zheng-fu-533bb480" target="_blank" rel="noreferrer" aria-label="LinkedIn">
+                        <img src="icons/linkedin-icon.png" alt="LinkedIn">
+                    </a>
 
-        <p>
-        The second line of my research examines journalism as a key site for shaping public understandings of the social world. In this work, I study how fact-checkers identify misinformation and how this process is conditioned by the mediating technologies they employ.
-        </p>
+                    <a href="https://github.com/fuzheng10" target="_blank" rel="noreferrer" aria-label="GitHub">
+                        <img src="icons/github-icon.png" alt="GitHub">
+                    </a>
 
-        <p>
-        More broadly, my research explores the sociopolitical forces that drive shifts in culture and communication. My prior work has examined how expert labor contributes to the legitimacy of institutional practices, such as legal compliance and vaccine uptake—an inquiry that culminated in my article “Work of Legitimacy,” published in the <em>Annual Review of Law and Social Science</em>. I have also studied the social forces underlying cultural phenomena, including how past disease encounters and sociopolitical dynamics produced divergent media narratives about the COVID-19 pandemic, how geopolitical rivalry shapes perceptions of immigrants, and how migrants’ local networks influence their perceptions of state repressive capacity. This body of work, which has appeared in journals including <em>American Political Science Review</em> and <em>Sociological Forum</em>, has also been recognized with several scholarly awards.
-        </p>
-    </div>
-</main>
+                    <a href="https://bsky.app/profile/fuzheng.bsky.social" target="_blank" rel="noreferrer" aria-label="Bluesky">
+                        <img src="icons/bluesky-icon.svg" alt="Bluesky">
+                    </a>
+                </div>
 
+                <div class="link-pills">
+                    <a class="link-pill" href="https://www.stonybrook.edu/commcms/journalism/about/ZhengFu" target="_blank" rel="noreferrer">SBU Profile</a>
+                    <a class="link-pill" href="https://scholar.google.com/citations?user=XkeaHFQAAAAJ&amp;hl=en" target="_blank" rel="noreferrer">Google Scholar</a>
+                    <a class="link-pill" href="documents/FuZhengCVwebsite.pdf" target="_blank" rel="noreferrer">Download CV</a>
+                </div>
+            </aside>
+
+            <div class="content-stack">
+                <section class="hero-copy surface">
+                    <p class="eyebrow">Expertise, Technology, and Culture</p>
+                    <h1>Research on AI, legitimacy, and the politics of communication.</h1>
+                    <p class="lede">
+                        I study how technologies and expertise mediate social life, with a focus on artificial intelligence, misinformation, and legitimacy.
+                    </p>
+                    <p>
+                        My work sits at the intersection of expertise, technology and politics. I examine how AI, as a rearticulated form of human expertise, reshapes communication and sociopolitical life; how media and journalistic expertise participate in the social contruction of public crisis, from the misinformation crisis to the pandemic; and more broadly, the political roots of cultural phenomena and the cultural roots of political phenomena.
+                    </p>
+                    <p>
+                        Across projects, I combine cross-national comparative perspectives and mixed-method approaches, including ethnography, interviews, computational text analysis, network analysis, surveys, and online experiments. My research has appeared in <em>American Political Science Review</em>, <em>Annual Review of Law and Social Science</em>, and <em>Sociological Forum</em>.
+                    </p>
+
+                    <div class="hero-highlights">
+                        <article class="highlight-card">
+                            <h3>Current Focus</h3>
+                            <p>The social life of AI and how journalistic expertise contributes to the identification of the "misinformation" crisis.</p>
+                        </article>
+                        <article class="highlight-card">
+                            <h3>Methods</h3>
+                            <p>Ethnography, interviews, computational text analysis, network analysis, surveys, and online experiments.</p>
+                        </article>
+                    </div>
+                </section>
+
+                <section class="section-card surface">
+                    <div class="section-heading">
+                        <h2>Updates</h2>
+                        
+                    </div>
+
+                    <div class="timeline">
+                        <article class="timeline-year">
+                            <h3>2026</h3>
+                            <ul class="timeline-items">
+                                <li><strong>Publication:</strong> “Missing Binds: How Absent Ties Unleash Migrant Worker Activism Under an Authoritarian Regime” accepted at <em>Sociological Forum</em>.</li>
+                                <li><strong>Presentation:</strong> Presenting “Power in the Loop: Algorithmic Governance and Legitimacy under Authoritarianism” at the American Sociological Association annual meeting in New York.</li>
+                                <li><strong>Talk:</strong> Guest lecture on AI and learning at Columbia University.</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-year">
+                            <h3>2025</h3>
+                            <ul class="timeline-items">
+                                <li><strong>Appointment:</strong> Joined Stony Brook University as a PRODIG+ Fellow in Critical AI in the Department of Journalism.</li>
+                                <li><strong>Publication:</strong> “The Work of Legitimacy” published in <em>Annual Review of Law and Social Science</em>.</li>
+                                <li><strong>Presentation:</strong> Presented work at the American Sociological Association annual meeting in Chicago.</li>
+                                <li><strong>Talk:</strong> Guest lecture on AI and digital journalism at Stony Brook University.</li>
+                                <li><strong>Award:</strong> Received the Center for Political Economy Graduate Student Grant at Columbia University.</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-year">
+                            <h3>2024</h3>
+                            <ul class="timeline-items">
+                                <li><strong>Publication:</strong> “Geo-political rivalry and anti-immigrant sentiment: A conjoint experiment in 22 countries” published in <em>American Political Science Review</em>.</li>
+                                <li><strong>Recognition:</strong> The APSR article was selected for a public scholarship highlight on the American Political Science Association’s <em>Political Science Now</em>.</li>
+                                <li><strong>Award:</strong> Co-winner of the Distinguished Contribution to Scholarship for a Paper by a Graduate Student Award from the ASA Political Sociology Section for an earlier version of “Missing Binds.”</li>
+                                <li><strong>Recognition:</strong> “‘It’s (Not) Like the Flu’” was listed as one of <em>Sociological Forum</em>’s most cited papers published between January 2022 and December 2023.</li>
+                            </ul>
+                        </article>
+
+                        <article class="timeline-year">
+                            <h3>2022</h3>
+                            <ul class="timeline-items">
+                                <li><strong>Publication:</strong> “‘It’s (Not) Like the Flu’: Expert Narratives and the Covid-19 Pandemic in Mainland China, Hong Kong, and the United States” published in <em>Sociological Forum</em>.</li>
+                                <li><strong>Presentation:</strong> Presented an earlier version of “Missing Binds” at the American Sociological Association annual meeting in Los Angeles.</li>
+                                <li><strong>Award:</strong> Received the Institute for Religion, Culture and Public Life Summer Research Fellowship from Columbia University.</li>
+                            </ul>
+                        </article>
+                    </div>
+                </section>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
